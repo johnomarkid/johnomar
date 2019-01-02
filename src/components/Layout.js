@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { StaticQuery, Link, graphql } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -53,7 +53,25 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div
+      <StaticQuery
+      query={graphql`
+        query {
+          site {
+            siteMetadata {
+              siteUrl
+              social {
+                twitter
+                github
+}
+            }
+          }
+        }
+      `
+      }
+      render={data => {
+        const { social } = data.site.siteMetadata
+        return (
+        <div
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
@@ -64,9 +82,17 @@ class Layout extends React.Component {
         {header}
         {children}
         <footer>
-          © 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <div
+        style={{
+          float: `right`,
+        }}>
+          <a href={`${data.site.siteMetadata.siteUrl}/rss.xml`}>RSS</a>
+          </div>
+          <a href={social.twitter}>Twitter</a> • <a href={social.github}>Github</a> • <a href="mailto:me@johnomar.com">Email</a>
+          </footer>
+          </div>
+        )}}
+      />
     )
   }
 }

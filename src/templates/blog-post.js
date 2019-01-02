@@ -31,11 +31,16 @@ class BlogPostTemplate extends React.Component {
           style={{
             marginBottom: rhythm(1),
           }}
-        />
-        <Bio />
+      />
 
-        <ul
-          style={{
+      <div>
+        <script async data-uid="ee1163b5a7" src="https://f.convertkit.com/ee1163b5a7/1027cf2a14.js"></script>
+      </div>
+      
+      <Bio />
+
+      <ul
+      style={{
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,

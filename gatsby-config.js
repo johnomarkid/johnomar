@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `John Omar`,
+    author: `John Omar`,
+    description: `Writing on software and business.`,
+    siteUrl: `https://johnomar.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `https://twitter.com/johnomarkid`,
+      github: `https://github.com/johnomarkid`
     },
   },
   plugins: [
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -57,13 +59,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `John Omar Writing`,
+        short_name: `John Omar Writing`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile-pic.png`,
       },
     },
     `gatsby-plugin-offline`,
