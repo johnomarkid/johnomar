@@ -1,5 +1,5 @@
 ---
-title: No More Bullshit 2019
+title: No More Bullshit in 2019
 date: '2019-01-01T00:40:00.000Z'
 ---
 
