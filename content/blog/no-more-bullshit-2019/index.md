@@ -25,7 +25,7 @@ My plan is to read a few books:
 - [How To Prove It](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995) to make sure I can follow and attempt proofs when trying to deeply understand a topic.
 - [Calculus Made Easy](https://www.gutenberg.org/files/33283/33283-pdf.pdf) because it was my favorite Calculus texbook in college.
 
-I'll work on problems all year and store the interesting ones in [Anki](https://apps.ankiweb.net/), which I currently use as a spaced repetition tool that shows me programming problems I want to re-visit every now and then. My goal with Anki isn't to memorize solutions. I want to be prompted to think about things that I haven't been forced to think about in my normal day to day.
+I'll work on problems all year and store the interesting ones in [Anki](https://apps.ankiweb.net/), which I currently use as a spaced repetition tool that shows me programming problems I want to re-visit every now and then. My goal with Anki isn't to memorize solutions. I want to be prompted to think about things that I am not forced to think about in my normal day to day.
 
 No more depleting math skills bullshit in 2019.
 

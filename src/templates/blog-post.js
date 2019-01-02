@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Helmet, { HelmetProvider } from 'react-helmet-async'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
+import Signup from '../components/Signup'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
@@ -33,11 +33,9 @@ class BlogPostTemplate extends React.Component {
       }}
       />
 
-      <HelmetProvider>
-        <Helmet>
-        <script async data-uid="ee1163b5a7" src="https://f.convertkit.com/ee1163b5a7/1027cf2a14.js"></script>
-        </Helmet>
-      </HelmetProvider>
+      <div style={{ margin: '90px 0 40px 0' }}>
+        <Signup />
+      </div>
       
       <Bio />
 
