@@ -1,17 +1,23 @@
 import Typography from 'typography'
-import Wordpress2016 from 'typography-theme-wordpress-2016'
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    'a.gatsby-resp-image-link': {
-      boxShadow: `none`,
-    },
+const overrideStyles = ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+  'html': {
+    textAlign: 'justify'
   }
-}
+})
 
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
+const typography = new Typography({
+  baseFontSize: '15px',
+  baseLineHeight: 1.5,
+  scaleRatio: 1.2,
+  blockMarginBottom: 0.6,
+  headerFontFamily: ['Open Sans', 'Arial', 'sans-serif'],
+  headerGray: 0,
+  headerGrayHue: 0,
+  bodyFontFamily: ['Lato', 'Arial', 'serif'],
+  bodyGray: 0,
+  overrideStyles
+})
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

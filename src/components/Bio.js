@@ -28,8 +28,8 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives in Los
-              Angeles building useful things on the internet.
+              Written by <strong>{author}</strong> who
+          builds useful things on the internet from Brooklyn, NY.
               {` `}
               <a href={`${social.twitter}`}>
                 You can contact him on Twitter

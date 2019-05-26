@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
-import Signup from '../components/Signup'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
@@ -21,7 +20,7 @@ class BlogPostTemplate extends React.Component {
         ...scale(-1 / 5),
         display: `block`,
         marginBottom: rhythm(1),
-        marginTop: rhythm(-1),
+        marginTop: rhythm(-0.5),
       }}
       >
       {post.frontmatter.date}
@@ -33,10 +32,7 @@ class BlogPostTemplate extends React.Component {
       }}
       />
 
-      <div style={{ margin: '0 0 40px 0' }}>
-        <Signup />
-      </div>
-      
+
       <Bio />
 
       <ul
